@@ -1,0 +1,72 @@
+/* 기본 테이블 */
+.table-view {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-view th, .table-view td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.table-view th {
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+
+.table-view tr:nth-child(even) {
+    background-color: #fdfdfe;
+}
+
+.table-view tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* 필터 입력 */
+.table-view input {
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+}
+
+/* Bootstrap 기반 페이징 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.pagination button {
+    border: 1px solid #dee2e6;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #0d6efd;
+    color: #fff;
+    border-color: #0d6efd;
+}
+
+/* 모바일 대응 */
+@media screen and (max-width: 768px) {
+    .table-view th, .table-view td {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .table-view input {
+        font-size: 0.8rem;
+    }
+
+    .pagination button {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}

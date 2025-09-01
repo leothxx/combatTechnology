@@ -1,7 +1,7 @@
 <template>
   <section style="text-align:center; padding: 10vh 0;">
     <h1>404</h1>
-    <p>페이지를 찾을 수 없어요.</p>
+    <p>페이지를 찾을 수 없습니다.</p>
     <RouterLink to="/">홈으로</RouterLink>
   </section>
 </template>

@@ -52,7 +52,7 @@
 
 <script setup>
 import './TableView.css';
-import { useTableView } from './TableView.js';
+import { useTableView } from './tableView.js';
 import { ref, isRef } from 'vue';
 
 // defineProps 단일 호출
